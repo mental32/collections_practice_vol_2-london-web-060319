@@ -27,7 +27,7 @@
 # }
 
 def organize_schools(schools)
-  collection= schools.values.map { |k| k[:location] }.uniq
+  collection = schools.values.map { |k| k[:location] }.uniq
 end
 
 def begins_with_r(arr)
