@@ -1,31 +1,3 @@
-# let(:schools) {
-#   {
-#     "flatiron school bk" => {
-#       :location => "NYC"
-#     },
-#     "flatiron school" => {
-#       :location => "NYC"
-#     },
-#     "dev boot camp" => {
-#       :location => "SF"
-#     },
-#     "dev boot camp chicago" => {
-#       :location => "Chicago"
-#     },
-#     "general assembly" => {
-#       :location => "NYC"
-#     },
-#     "Hack Reactor" => {
-#       :location => "SF"
-#     }
-#   }
-# }
-# let(:organized_schools) {
-#   {"NYC"=>["flatiron school bk", "flatiron school", "general assembly"],
-#   "SF"=>["dev boot camp", "Hack Reactor"],
-#   "Chicago"=>["dev boot camp chicago"]}
-# }
-
 def organize_schools(schools)
   collection = schools.values.map { |k| k[:location] }.uniq
   Hash[ *collection.map { |k| [k, schools.select { |s, v| v[:location] == k }.keys] }.flatten(1) ]
