@@ -26,6 +26,12 @@ let(:organized_schools) {
    "Chicago"=>["dev boot camp chicago"]}
 }
 
+
+def organize_schools(schools)
+  schools.map { |k, v| 
+end
+
+
 def begins_with_r(arr)
   arr.all? { |e| e[0] == 'r' }
 end
@@ -53,8 +59,4 @@ end
 
 def find_cool(cool)
   cool.select { |p| p[:temperature] == 'cool' }
-end
-
-def organize_schools(schools)
-  schools.sort_by { |k, v| v }.reverse
 end
