@@ -93,60 +93,8 @@ describe '#count_elements' do
 
 end
 
-let(:keys) {
-  [
-      {
-          :first_name => "blake",
-               :motto => "Have a koala-ty day!"
-      },
-      {
-          :first_name => "ashley",
-               :motto => "I dub thee, 'Lady Brett Ashley'."
-      }
-  ]
-}
-
-let(:data) {
-  [
-         {
-           "blake" => {
-              :awesomeness => 10,
-                   :height => "74",
-                :last_name => "johnson"
-          },
-          "ashley" => {
-              :awesomeness => 9,
-                   :height => 60,
-                :last_name => "dubs"
-          }
-      }
-  ]
-}
-
-let(:merged_data) {
-  [
-      {
-           :first_name => "blake",
-          :awesomeness => 10,
-               :height => "74",
-            :last_name => "johnson",
-                :motto => "Have a koala-ty day!"
-
-      },
-      {
-           :first_name => "ashley",
-          :awesomeness => 9,
-               :height => 60,
-            :last_name => "dubs",
-                :motto => "I dub thee, 'Lady Brett Ashley'."
-
-      }
-  ]
-}
-
-
 def merge_data(keys, data)
-  Hash[ *data.values.reduce({}, :merge).map { |k, v| } ]
+  Hash[ *data.values.reduce({}, :merge).map { |k, v| v.merge {motto: keys.find { |d| d[:first_name] == k }} } ]
 end
 
 def find_cool(cool)
