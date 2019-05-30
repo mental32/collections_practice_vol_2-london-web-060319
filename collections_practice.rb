@@ -160,14 +160,6 @@ def find_cool(cool)
   cool.select { |p| p[:temperature] == 'cool' }
 end
 
-  # Question 7
-
-  it 'find all cool hashes' do
-    expect(find_cool(cool)).to eq([{:name => "blake",:temperature => "cool"}])
-  end
-
-end
-
 def organize_schools(schools)
   schools.sort_by { |k, v| v }.reverse
 end
