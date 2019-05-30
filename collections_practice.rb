@@ -147,7 +147,7 @@ let(:merged_data) {
 
 def merge_data(keys, data)
   collection = data.values.reduce({}, :merge)
-  Hash[ *col.keys.map { |k| data..merge {motto: keys.find { |d| d[:first_name] == k }} } ]
+  Hash[ *collection.keys.map { |k| data..merge {motto: keys.find { |d| d[:first_name] == k }} } ]
 end
 
 def find_cool(cool)
