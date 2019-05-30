@@ -19,12 +19,12 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  arr.uniq.collect { |elem| {name: elem['name', count: arr.count elem} }
+  arr.uniq.collect { |elem| {name: elem['name'], count: arr.count(elem)} }
 end
 
 def merge_data(keys, data)
   collection = data.values.reduce({}, :merge)
-  Hash[ *collection.keys.map { |k| collection[k].merge {motto: keys.find { |d| d[:first_name] == k }} } ]
+  Hash[ *collection.keys.map { |k| collection[k].merge Hash[:motto, keys.find { |d| d[:first_name] == k }] } ]
 end
 
 def find_cool(cool)
