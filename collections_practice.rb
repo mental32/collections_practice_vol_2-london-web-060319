@@ -52,13 +52,8 @@ describe '#begins_with_r' do
 
 end
 
-describe '#contain_a' do
-  # Question 2
-
-  it "return all elements that contain the letter 'a'" do
-    expect(contain_a(["earth", "fire", "wind", "water", "heart"])).to eq(["earth", "water", "heart"])
-  end
-
+def contain_a(arr)
+  arr.select { |e| e.include? 'a' }
 end
 
 def first_wa(arr)
