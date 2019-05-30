@@ -27,7 +27,7 @@ let(:organized_schools) {
 }
 
 def organize_schools(schools)
-  
+  schools.values
 end
 
 def begins_with_r(arr)
