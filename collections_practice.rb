@@ -164,12 +164,5 @@ describe '#find_cool' do
 
 end
 
-describe '#organize_schools' do
-
-  # Question 8
-
-  it 'organizes the schools by location' do
-    expect(organize_schools(schools)).to eq(organized_schools)
-  end
-
+def organize_schools(schools)
 end
