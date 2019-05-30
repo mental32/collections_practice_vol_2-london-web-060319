@@ -84,10 +84,7 @@ describe '#remove_non_strings' do
 end
 
 def count_elements(arr)
-
-  for elem in arr do
-    
-
+  arr.uniq.collect { |elem| {name: elem['name', count: arr.count elem} }
 end
 
 describe '#count_elements' do
