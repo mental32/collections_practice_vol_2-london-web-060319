@@ -146,15 +146,7 @@ let(:merged_data) {
 
 
 def merge_data(keys, data)
-
-describe '#merge_data' do
-
-  # Question 6
-
-  it 'combines two nested data structures into one' do
-    expect(merge_data(keys, data)).to eq(merged_data)
-  end
-
+  
 end
 
 def find_cool(cool)
