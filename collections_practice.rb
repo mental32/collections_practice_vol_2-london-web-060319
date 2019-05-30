@@ -83,7 +83,12 @@ describe '#remove_non_strings' do
 
 end
 
-def count_elements
+def count_elements(arr)
+
+  for elem in arr do
+    
+
+end
 
 describe '#count_elements' do
 
