@@ -25,7 +25,7 @@ end
 def merge_data(keys, data)
   collection = Hash[*data]
 
-  collection.keys.map { |k| collection[k].merge Hash[:motto, keys.find { |d| d[:first_name] == k }] }
+  collection.keys.map { |k| collection[k].merge Hash[:motto, keys.find { |d| d[:first_name] == k }[:motto]] }
 
   # Hash[ *collection.keys.map { |k| collection[k].merge Hash[:motto, keys.find { |d| d[:first_name] == k }] } ]
 end
