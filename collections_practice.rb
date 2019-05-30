@@ -154,8 +154,6 @@ describe '#merge_data' do
 
 end
 
-describe '#find_cool' do
-
 def find_cool(cool)
   cool.select { |p| p[:temperature] == 'cool' }
 end
