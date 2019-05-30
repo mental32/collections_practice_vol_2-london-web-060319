@@ -27,7 +27,7 @@
 # }
 
 def organize_schools(schools)
-  schools.values
+  schools.values.map { |k| k[:location] }
 end
 
 def begins_with_r(arr)
