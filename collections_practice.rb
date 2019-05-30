@@ -1,4 +1,5 @@
 def organize_schools(schools)
+  collection = Hash[*data]
   Hash[ *schools.values.values.uniq.map { |k| [k, [schools.select { |n, v| v[:location] == k } ] ] }.flatten(1) ]
 end
 
