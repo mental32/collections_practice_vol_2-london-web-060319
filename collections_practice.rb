@@ -71,6 +71,9 @@ describe '#first_wa' do
 
 end
 
+def remove_non_strings(arr)
+  arr.delete_if { |e| e.class != 
+
 describe '#remove_non_strings' do
 
   # Hint: Use the method "class"  "blake".class
