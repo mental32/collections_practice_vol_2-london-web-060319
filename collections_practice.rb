@@ -1,16 +1,3 @@
-let(:cool) {
-  [
-          {
-                 :name => "ashley",
-          :temperature => "sort of cool"
-      },
-          {
-                 :name => "blake",
-          :temperature => "cool"
-      }
-  ]
-}
-
 let(:schools) {
   {
     "flatiron school bk" => {
