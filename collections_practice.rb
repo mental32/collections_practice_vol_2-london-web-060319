@@ -19,7 +19,7 @@ def remove_non_strings(arr)
 end
 
 def count_elements(arr)
-  arr.uniq.collect { |elem| {name: arr.find { |e| e[:name] == elem }, count: arr.count(elem)} }
+  arr.uniq.collect { |elem| {name: name, count: arr.count(elem)} }
 end
 
 def merge_data(keys, data)
