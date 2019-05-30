@@ -87,16 +87,6 @@ def count_elements(arr)
   arr.uniq.collect { |elem| {name: elem['name', count: arr.count elem} }
 end
 
-describe '#count_elements' do
-
-  # Question 5
-
-  it 'count how many times something appears in an array' do
-    expect(count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
-  end
-
-end
-
 def merge_data(keys, data)
   collection = data.values.reduce({}, :merge)
   Hash[ *collection.keys.map { |k| collection[k].merge {motto: keys.find { |d| d[:first_name] == k }} } ]
