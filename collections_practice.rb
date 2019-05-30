@@ -28,7 +28,7 @@
 
 def organize_schools(schools)
   collection = schools.values.map { |k| k[:location] }.uniq
-  Hash[ *collection.map { |k| [k, schools.select { |s, v| v[:location] == k }.keys] }.flatten ]
+  Hash[ *collection.map { |k| [k, schools.select { |s, v| v[:location] == k }.keys] }.flatten(1) ]
 end
 
 def begins_with_r(arr)
