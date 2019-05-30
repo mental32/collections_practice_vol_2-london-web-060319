@@ -39,17 +39,8 @@ let(:organized_schools) {
    "Chicago"=>["dev boot camp chicago"]}
 }
 
-describe '#begins_with_r' do
-  # Question 1
-
-  it 'Return true if every element of the tools array starts with an "r" and false otherwise.' do
-    expect(begins_with_r(["ruby", "rspec", "rails"])).to eq(true)
-  end
-
-  it "should return false if there's an element that does not begin with r" do
-    expect(begins_with_r(["ruby", "rspec", "sails"])).to eq(false)
-  end
-
+def begins_with_r(arr)
+  arr.all? { |e| e[0] == 'r' }
 end
 
 def contain_a(arr)
