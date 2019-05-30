@@ -165,5 +165,5 @@ describe '#find_cool' do
 end
 
 def organize_schools(schools)
-  schools.sort 
+  schools.sort_by { |k, v| v }.reverse
 end
