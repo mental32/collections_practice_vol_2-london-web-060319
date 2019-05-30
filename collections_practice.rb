@@ -61,6 +61,9 @@ describe '#contain_a' do
 
 end
 
+def first_wa(arr)
+  arr.find { |e| e.
+
 describe '#first_wa' do
 
   # Question 3
