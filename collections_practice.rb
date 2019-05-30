@@ -23,7 +23,7 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  collection = data.values.reduce({}, :merge)
+  collection = data.reduce({}, :merge)
   Hash[ *collection.keys.map { |k| collection[k].merge Hash[:motto, keys.find { |d| d[:first_name] == k }] } ]
 end
 
