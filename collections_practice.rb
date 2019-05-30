@@ -11,7 +11,7 @@ def contain_a(arr)
 end
 
 def first_wa(arr)
-  arr.find { |e| e.class == String && e.starts_with? 'ws' }
+  arr.find { |e| e.class == String && e.starts_with?('ws') }
 end
 
 def remove_non_strings(arr)
