@@ -146,7 +146,7 @@ let(:merged_data) {
 
 
 def merge_data(keys, data)
-  data.map { |k, v|  }
+  Hash[ *data.values.reduce({}, :merge).map { |k, v| } ]
 end
 
 def find_cool(cool)
