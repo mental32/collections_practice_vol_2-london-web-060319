@@ -156,6 +156,10 @@ end
 
 describe '#find_cool' do
 
+def find_cool(cool)
+  cool.select { |p| p[:temperature] == 'cool' }
+end
+
   # Question 7
 
   it 'find all cool hashes' do
