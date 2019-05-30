@@ -62,16 +62,7 @@ describe '#contain_a' do
 end
 
 def first_wa(arr)
-  arr.find { |e| e.
-
-describe '#first_wa' do
-
-  # Question 3
-
-  it "Return the first element that begins with the letters 'wa'" do
-    expect(first_wa(["candy", :pepper, "wall", :ball, "wacky"])).to eq("wall")
-  end
-
+  arr.find { |e| e.class == String && e.starts_with? 'ws' }
 end
 
 def remove_non_strings(arr)
