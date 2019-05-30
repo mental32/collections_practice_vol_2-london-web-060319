@@ -1,6 +1,6 @@
 def organize_schools(schools)
   collection = Hash[*data]
-  Hash[ *collection.values.values.uniq.map { |k| [k, [schools.select { |n, v| v[:location] == k } ] ] }.flatten(1) ]
+  Hash[ *collection.values.uniq.map { |k| [k, [schools.select { |n, v| v[:location] == k } ] ] }.flatten(1) ]
 end
 
 def begins_with_r(arr)
