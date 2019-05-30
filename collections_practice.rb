@@ -72,18 +72,7 @@ describe '#first_wa' do
 end
 
 def remove_non_strings(arr)
-  arr.delete_if { |e| e.class != 
-
-describe '#remove_non_strings' do
-
-  # Hint: Use the method "class"  "blake".class
-
-  # Question 4
-
-  it "remove anything that's not a string from an array" do
-    expect(remove_non_strings(["blake", 1, :hello])).to eq(["blake"])
-  end
-
+  arr.delete_if { |e| e.class != String }
 end
 
 def count_elements(arr)
